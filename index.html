@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS Inc. | IT Consulting Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-cyan-500/20">
+                    ICS
+                </div>
+                <span class="font-bold text-xl tracking-tight text-white">ics-inc<span class="text-cyan-400">.ca</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#scope" class="hover:text-cyan-400 transition-colors">Scope & Focus</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all shadow-md shadow-cyan-500/20">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6 max-w-7xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="md:w-1/2 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                Enterprise IT Architecture & DevOps
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                Senior Engineering. <br/>
+                <span class="gradient-text">Zero Infrastructure Fluff.</span>
+            </h1>
+            <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
+                Specialized IT consulting delivering enterprise OpenShift/Kubernetes orchestration, cloud platform migrations, automated CI/CD pipelines, and resilient Linux infrastructure.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                <a href="#contact" class="px-6 py-3.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-center transition-all shadow-lg shadow-cyan-500/25">
+                    Schedule Consultation
+                </a>
+                <a href="#scope" class="px-6 py-3.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-center transition-all">
+                    View Technical Focus
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2 w-full">
+            <div class="p-6 rounded-2xl glass-card border border-slate-800 shadow-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400">oc-cluster-status.sh</span>
+                </div>
+                <pre class="font-mono text-xs sm:text-sm text-slate-300 space-y-1 overflow-x-auto">
+<span class="text-cyan-400">$</span> oc get nodes
+NAME             STATUS   ROLES    AGE    VERSION
+sno-node-01      Ready    master   180d   v1.29.x
+
+<span class="text-cyan-400">$</span> oc get routes -n ics-inc
+NAME          HOST         TERMINATION   PORT
+ics-website   ics-inc.ca   edge/Redirect 8080-tcp
+
+<span class="text-green-400">✔ Enterprise Ready</span>
+<span class="text-green-400">✔ Cloudflare Edge Protection Active</span>
+<span class="text-green-400">✔ Automated GitOps Pipelines Configured</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight">Core Competencies</h2>
+                <p class="text-slate-400 mt-3">Pragmatic, senior-level IT execution designed for high availability, security, and scalability.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-xl glass-card hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Container Platforms</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Design, deployment, and management of Red Hat OpenShift, Kubernetes, and Single-Node OpenShift (SNO) clusters tailored for enterprise production workloads.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 rounded-xl glass-card hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">DevOps & CI/CD Automation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Streamline software delivery with modern GitOps workflows, automated testing, container builds, and Infrastructure as Code (Terraform, Ansible).
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 rounded-xl glass-card hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hybrid Cloud Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Secure hybrid cloud architecture, zero-trust edge networking with Cloudflare Tunnels, Linux server hardening, and cloud cost optimization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scope Matrix Section (What We Do / What We Don't Do) -->
+    <section id="scope" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight">Scope & Engagement Boundaries</h2>
+            <p class="text-slate-400 mt-3">We believe in absolute transparency about where our expertise lies so you get maximum value.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- What We Do -->
+            <div class="p-8 rounded-2xl bg-slate-900/80 border border-emerald-500/30">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-emerald-400">What We Do</h3>
+                </div>
+                <ul class="space-y-4 text-slate-300 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <span>Red Hat OpenShift & Kubernetes Architecture / Admin</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <span>Infrastructure as Code (Terraform, Ansible, Helm)</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <span>GitOps & Automated Deployment Pipelines</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <span>Secure Cloud Networking & Edge Ingress Solutions</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                        <span>Enterprise Linux System Engineering & Troubleshooting</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- What We DO NOT Do -->
+            <div class="p-8 rounded-2xl bg-slate-900/80 border border-rose-500/30">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-8 h-8 rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-rose-400">What We Do NOT Do</h3>
+                </div>
+                <ul class="space-y-4 text-slate-400 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span>End-user desktop, PC repair, or printer support</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span>Basic WordPress or low-code web design</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span>Physical office network cabling or hardware sales</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span>General tier-1 office helpdesk services</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span>Consumer IT troubleshooting</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold tracking-tight">Ready to Discuss Your Infrastructure?</h2>
+            <p class="text-slate-400 mt-3 mb-8">Reach out directly for specialized consulting engineering engagements.</p>
+            <div class="glass-card p-8 rounded-2xl max-w-xl mx-auto border border-slate-800 space-y-6">
+                <div class="flex items-center justify-center space-x-3 text-cyan-400 text-lg font-semibold">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:contact@ics-inc.ca" class="hover:underline">contact@ics-inc.ca</a>
+                </div>
+                <p class="text-xs text-slate-500">IT Consulting Services Inc. • Canada</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 IT Consulting Services Inc. (ics-inc.ca). All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot Widget Button -->
+    <button id="chat-toggle" onclick="toggleChat()" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold flex items-center justify-center shadow-xl shadow-cyan-500/25 hover:scale-105 transition-all z-50">
+        <i id="chat-icon" class="fa-solid fa-comments text-2xl"></i>
+    </button>
+
+    <!-- Chatbot Modal -->
+    <div id="chat-modal" class="fixed bottom-24 right-6 w-80 sm:w-96 h-[480px] glass-card rounded-2xl border border-slate-700 shadow-2xl flex flex-col hidden z-50 overflow-hidden">
+        <!-- Chat Header -->
+        <div class="bg-slate-900/90 p-4 border-b border-slate-800 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></div>
+                <span class="font-bold text-sm text-slate-100">ICS Assistant</span>
+            </div>
+            <button onclick="toggleChat()" class="text-slate-400 hover:text-white text-sm">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Chat Body -->
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+            <div class="bg-slate-800/80 p-3 rounded-xl rounded-tl-none border border-slate-700/50 text-slate-200">
+                Hello! I am the ICS Assistant. Ask me about our OpenShift, DevOps, or cloud consulting services!
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <form id="chat-form" onsubmit="handleChatSubmit(event)" class="p-3 border-t border-slate-800 bg-slate-900/80 flex gap-2">
+            <input id="chat-input" type="text" placeholder="Type your question..." required class="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-cyan-500">
+            <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-3 py-2 rounded-lg text-xs transition-colors">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- Chatbot Logic -->
+    <script>
+        function toggleChat() {
+            const modal = document.getElementById('chat-modal');
+            const icon = document.getElementById('chat-icon');
+            modal.classList.toggle('hidden');
+            if (modal.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-comments text-2xl';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        }
+
+        async function handleChatSubmit(e) {
+            e.preventDefault();
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Append User Message
+            appendMessage(message, 'user');
+            input.value = '';
+
+            // Simulate or Call API
+            const response = await getBotResponse(message);
+            appendMessage(response, 'bot');
+        }
+
+        function appendMessage(text, sender) {
+            const container = document.getElementById('chat-messages');
+            const msgDiv = document.createElement('div');
+            
+            if (sender === 'user') {
+                msgDiv.className = 'bg-cyan-500/10 border border-cyan-500/30 text-cyan-200 p-3 rounded-xl rounded-tr-none ml-auto max-w-[85%] text-xs';
+            } else {
+                msgDiv.className = 'bg-slate-800/80 border border-slate-700/50 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[85%] text-xs';
+            }
+            
+            msgDiv.innerText = text;
+            container.appendChild(msgDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        async function getBotResponse(userText) {
+            const text = userText.toLowerCase();
+
+            // Local fallback knowledge base
+            if (text.includes('openshift') || text.includes('kubernetes') || text.includes('k8s')) {
+                return "We specialize in Red Hat OpenShift and Kubernetes platform architecture, upgrades, SNO deployments, and containerization!";
+            } else if (text.includes('printer') || text.includes('helpdesk') || text.includes('desktop') || text.includes('pc')) {
+                return "ICS Inc. focuses exclusively on enterprise cloud & DevOps infrastructure. We do not offer end-user desktop or printer helpdesk support.";
+            } else if (text.includes('contact') || text.includes('hire') || text.includes('email')) {
+                return "You can reach out directly via email at contact@ics-inc.ca to schedule an initial technical consultation.";
+            } else {
+                return "Thanks for asking! ICS Inc. provides senior consulting in OpenShift, Kubernetes, DevOps, and Cloud Infrastructure. Send an email to contact@ics-inc.ca for custom project inquiries.";
+            }
+        }
+    </script>
+</body>
+</html>
